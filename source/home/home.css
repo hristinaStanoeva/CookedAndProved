@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100%;
+    text-align: center;
+}
+
+.background {
+    background-image: url('assets/homeBackground.jpg');
+    box-shadow: inset 0px -130px 200px rgba(0, 0, 0, 0.9), inset 0px 230px 200px rgba(0, 0, 0, 0.9);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Allura', cursive;
+    font-size: 39px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 30px;
+}
+
+ul#menu li {
+    display: inline;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 30px;
+}
+
+ul#menu {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 53px;
+    color: white;
+    margin-top: 100px;
+}
+
+.gallery {
+    background-color: white;
+    height: 240px;
+    margin-top: 100px;
+}
+
+.item {
+    width: 225px;
+}
+
+.image {
+    height: 150px;
+    width: 225px;
+    margin-top: 40px;
+}
+
+.category {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+    font-size: 13px;
+    color: #BC486B;
+    margin-top: 10px;
+}
+
+.name {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    word-wrap: normal;
+}
+
+.footer {
+    background-color: black;
+    height: 40px;
+    margin-top: auto;
+}
