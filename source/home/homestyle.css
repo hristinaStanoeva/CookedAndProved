@@ -5,16 +5,14 @@
     --clr-breakfast: #2789B2;
     --clr-ideas: #6DB227;
     --clr-about-me: #7E27B2;
+    --pd-frame: 250px;
+    --wd-gallery-img: 350px;
 }
 
 body, html {
-    height: 100%;
     margin: 0;
     text-align: center;
-}
-
-.header {
-    height: 160px;
+    position: relative;
 }
 
 .page-title {
@@ -22,17 +20,16 @@ body, html {
     font-size: 60px;
     font-weight: normal;
     color: white;
-    padding-top: 39px;
+    padding-top: 40px;
     margin: 0;
 }
 
 .background {
     background-image: url('assets/homeBackground.jpg');
-    height: 100%;
+    height: 1200px;
 }
 
 .shadow {
-    position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
@@ -42,21 +39,27 @@ body, html {
     box-shadow: inset 0px -200px 200px rgba(0, 0, 0, 0.9), inset 0px 300px 200px rgba(0, 0, 0, 0.9);
 }
 
+.navbar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: default;
+}
+
 .navbar .nav-item {
     display: inline-block;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    margin: 30px;
-    transition: transform 100ms linear;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: transform 100ms linear, color 100ms linear;
 }
 
 .navbar .nav-item:hover {
     transform: scale(1.1);
-    cursor: default;
 }
 
 .nav-item.starter:hover {
@@ -83,43 +86,52 @@ body, html {
     color: var(--clr-about-me);
 }
 
-.subtitle {
+.page-subtitle {
     font-family: 'Roboto Slab', serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 53px;
+    font-size: 39px;
     color: white;
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+
+.gallery-wraper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .gallery {
     background-color: white;
-    height: 240px;
-    margin-top: 100px;
+    height: 300px;
+    margin-top: 250px;
+    padding-left: var(--pd-frame);
+    padding-right: var(--pd-frame);
 }
 
-.item {
+.gallery-item {
     width: 225px;
 }
 
-.image {
-    height: 150px;
-    width: 225px;
+.gallery-item-image {
+    height: 162px;
+    width: 260px;
     margin-top: 40px;
 }
 
-.category {
+.item-category {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: bold;
-    font-size: 13px;
-    color: #BC486B;
+    font-size: 16px;
+    color: var(--clr-main-course);
     margin-top: 10px;
 }
 
-.name {
+.item-name {
     font-family: 'Roboto Slab', serif;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     margin-top: 10px;
     word-wrap: normal;
@@ -127,6 +139,10 @@ body, html {
 
 .footer {
     background-color: black;
-    height: 40px;
-    margin-top: auto;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    width: 100%;
+    color: white;
 }
