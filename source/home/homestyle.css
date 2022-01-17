@@ -86,6 +86,30 @@ body, html {
     color: var(--clr-about-me);
 }
 
+.starter {
+    color: var(--clr-starter);
+}
+
+.main-course {
+    color: var(--clr-main-course);
+}
+
+.dessert {
+    color: var(--clr-dessert);
+}
+
+.breakfast {
+    color: var(--clr-breakfast);
+}
+
+.ideas {
+    color: var(--clr-ideas);
+}
+
+.about-me {
+    color: var(--clr-about-me);
+}
+
 .page-subtitle {
     font-family: 'Roboto Slab', serif;
     font-style: normal;
@@ -96,6 +120,23 @@ body, html {
     margin-bottom: 0;
 }
 
+.popular {
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    background-color: white;
+    margin-top: 250px;
+    padding-left: var(--pd-frame);
+    padding-right: var(--pd-frame);
+}
+
 .gallery-wraper {
     display: flex;
     justify-content: space-between;
@@ -104,34 +145,37 @@ body, html {
     margin: auto;
 }
 
-.gallery {
-    background-color: white;
-    height: 300px;
-    margin-top: 250px;
-    padding-left: var(--pd-frame);
-    padding-right: var(--pd-frame);
+.gallery-item {
+    width: 270px;
+    margin-top: -35px;
+}
+
+.first-gallery-item {
+    margin-top: -81px;
 }
 
 .gallery-item-image {
     height: 180px;
     width: 270px;
-    margin-top: 40px;
 }
 
 .item-category {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: bold;
     font-size: 16px;
-    color: var(--clr-main-course);
     margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .item-name {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     color: black;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 35px;
     word-wrap: normal;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer {
